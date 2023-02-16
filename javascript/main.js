@@ -1,6 +1,30 @@
-const portfolioCardBoxEl = document.querySelector('.portfolio_card2_item_box')
-const cardItemImg = document.querySelector('.card2_item_img');
-const hiddenCardEl = document.querySelector('.hidden_card');
-
-
-
+"strict";
+const containerEl = document.getElementById("card_container");
+const leftToggleEl = document.querySelector(".feather-toggle-left");
+const rightToggleEl = document.querySelector(".feather-toggle-right");
+const webLinkEl = document.querySelector(".web_link");
+const contactEmailEl = document.querySelector(".contact_email");
+const emailLinkEl = document.querySelector(".email_link");
+// console.log(rightToggleEl, leftToggleEl);
+leftToggleEl.addEventListener("click", function () {
+  containerEl.style.backgroundColor = "#f5f5f5";
+  containerEl.style.color = "#2c3e50";
+  webLinkEl.style.color = "#2c3e50";
+  leftToggleEl.style.stroke = "#2c3e50";
+  leftToggleEl.style.fill = "#f5f5f5";
+  rightToggleEl.style.fill = "#2c3e50";
+  rightToggleEl.style.stroke = "#f5f5f5";
+  contactEmailEl.style.backgroundColor = "#2c3e50";
+  emailLinkEl.style.color = "#f5f5f5";
+});
+rightToggleEl.addEventListener("click", function () {
+  containerEl.style.backgroundColor = "#2c3e50";
+  containerEl.style.color = "#f5f5f5";
+  webLinkEl.style.color = "#f5f5f5";
+  rightToggleEl.style.fill = "#2c3e50";
+  rightToggleEl.style.stroke = "#f5f5f5";
+  leftToggleEl.style.fill = "#f5f5f5";
+  leftToggleEl.style.stroke = "#2c3e50";
+  contactEmailEl.style.backgroundColor = "#f5f5f5";
+  emailLinkEl.style.color = "#2c3e50";
+});
