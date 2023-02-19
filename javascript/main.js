@@ -1,1 +1,3 @@
-"strict"; window.onLoad( window.print('hello world!') )
+"strict"; const containerEl = document.getElementById("container"); 
+window.addEventListener("onLoad", function() { console.log("hello world!")
+})
