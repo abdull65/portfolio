@@ -1,3 +1,4 @@
-"strict"; const containerEl = document.getElementById("container"); 
-containerEl.addEventListener("onLoad", function() { console.log("hello world!")
-})
+"strict"; window.onload= function() { const popUpEl = 
+document.getElementById("pop_up") popUlEl.style.display="block"
+}
+
