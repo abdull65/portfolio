@@ -1,5 +1,3 @@
-"strict"; window.onload= function() { const popUpEl = 
-document.getElementById("pop_up");
- popUpEl.style.display="block"; setTimeout(5000)
-}
+"strict";const popUpEl = document.getElementById("pop_up"); window.onload=setTimeout(function() { popUpEl.style.display="flex";setTimeout(function() { 
+popUpEl.style.display="none"},10000);},-200)
 
