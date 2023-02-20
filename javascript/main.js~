@@ -1,7 +1,8 @@
 
 "strict"; const popUpEl = document.getElementById("pop_up"); const containerEl = document.getElementById("container"); window.onload=setTimeout(function() { 
-popUpEl.style.display="flex";containerEl.style.display="none";setTimeout(function() { popUpEl.style.display="none";containerEl.style.display="block";},10000);},0) y const bodyEl = 
-document.querySelector("body"); const lightBgEl = document.querySelector(".feather-sun"); const darkBgEl = document.querySelector(".feather-moon"); const changeBgEl = 
+popUpEl.style.display="flex";containerEl.style.display="none";setTimeout(function() { popUpEl.style.display="none";containerEl.style.display="block";},10000);},0)
+y
+const bodyEl = document.querySelector("body"); const lightBgEl = document.querySelector(".feather-sun"); const darkBgEl = document.querySelector(".feather-moon"); const changeBgEl = 
 document.querySelectorAll(".bg_dark"); const backToTopEl = document.querySelector(".back_to_top_btn"); const backToTopMsgEl = document.querySelector(".back_to_top_msg")
  
 function darkBg() { bodyEl.style.backgroundColor="#2c3e50"; bodyEl.style.color="#eeeeee"; lightBgEl.style.fill="#eeeeee"; darkBgEl.style.fill="2c3e50"; for(let i = 0; i < 
