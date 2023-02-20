@@ -334,6 +334,6 @@ button[type="submit"] { display: inline-block; border: none; background-color:
 
 .icon_box svg { width: 20px; height: 20px; stroke: var(--primary-color-dark); fill: var(--primary-color-dark); stroke-width: 1; margin-top: .2rem;
 }#bg_color_changer_box {position: fixed;top: 30rem;right:2.8rem;display: flex;
-flex-direction:column;align-items: center;gap: 0.5rem;} .light_mode_box .feather:active,.dark_mode_box .feather:active{transform:scale(1.08);stroke:#00b87b;} .light_mode_box .feather, 
-.dark_mode_box .feather {cursor: pointer; transition: backround 300ms linear;} .back_to_top_btn { position: fixed; top: 34.8rem;right: 1.6rem; display: flex; flex-direction: column; 
-align-items: center;justify-content: center; height: 4rem;width: 4rem;} .back_to_top_msg {font-size: 0.6rem;color: #00b87b;margin-top: .6rem;}
+flex-direction:column;align-items: center;gap: 0.5rem; z-index: 1030;} .light_mode_box .feather:active,.dark_mode_box .feather:active{transform:scale(1.08);stroke:#00b87b;} 
+.light_mode_box .feather, .dark_mode_box .feather {cursor: pointer; transition: backround 300ms linear;} .back_to_top_btn { position: fixed; top: 34.8rem;right: 1.6rem; display: flex; 
+flex-direction: column; align-items: center;justify-content: center; height: 4rem;width: 4rem;z-index: 1030;} .back_to_top_msg {font-size: 0.6rem;color: #00b87b;margin-top: .6rem;}
