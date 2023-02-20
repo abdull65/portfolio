@@ -52,5 +52,5 @@
 .footer_content_card2 { display: inline-flex; width: 100%; margin-bottom: 1rem; justify-content: center;
 }
 .footer_content_card2 .footer_btn { border-left: 0;
-}#bg_color_changer_box {right: 1rem;}.back_to_top_btn {right: 0;}
+}#bg_color_changer_box {right: 0.8rem;}.back_to_top_btn {right: -0.5rem;}
 }
