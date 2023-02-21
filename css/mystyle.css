@@ -174,7 +174,7 @@ body {
   height: 10px;
   width: 10px;
   bottom: -4px;
-  border: 2px solid #e9ecef;
+  border: 2px solid #00b87b;
   border-radius: 10px;
 }
 
@@ -185,7 +185,7 @@ body {
   width: 50px;
   bottom: 1px;
   left: 20px;
-  background-color: #e9ecef;
+  background-color: #00b87b;
 }
 
 .more_about_me {
