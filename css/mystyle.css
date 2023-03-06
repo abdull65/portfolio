@@ -145,7 +145,8 @@ body {
   transition: background, scale 400ms linear;
 }
 .btn:active,
-.contact_form_btn:active {
+.contact_form_btn:active,
+.fa-brands:active{
 transform: scale(1.05);
 }
 
