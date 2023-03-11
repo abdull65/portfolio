@@ -29,6 +29,7 @@ function darkBg() {
 }
 
 function lightBg() {
+  bodyEl.style.backgroundColor = "#eeeeee";
   containerEl.style.backgroundColor = "#eeeeee";
   bodyEl.style.color = "#2c3e50";
   lightBgEl.style.fill = "#eeeeee";
