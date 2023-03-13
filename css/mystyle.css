@@ -50,7 +50,7 @@ body {
   margin: 0px 20px;
   padding:
     10px 20px;
-  transition: background 300ms linear;
+  transition: background 400ms linear;
   position: relative;
 }
 
@@ -139,15 +139,15 @@ body {
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
-  text-decoration:
-    none;
+  text-decoration: none;
   border: 1px solid transparent;
   transition: background, scale 400ms linear;
 }
+
 .btn:active,
 .contact_form_btn:active,
-.fa-brands:active{
-transform: scale(1.05);
+.fa-brands:active {
+  transform: scale(1.05);
 }
 
 .btn:hover {
@@ -378,7 +378,9 @@ transform: scale(1.05);
   margin: 0px auto 20px;
   transition: background 400ms linear;
 }
-
+.service_section_content_card p {
+text-align: left;
+}
 .portfolio_section {
   padding-top: 3rem;
   padding-bottom: 3rem;
