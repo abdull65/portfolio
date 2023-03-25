@@ -1,6 +1,7 @@
 const popUpEl = document.getElementById("pop_up");
 const containerEl = document.getElementById("container");
 const bodyEl = document.querySelector("body");
+const btnEl = document.querySelectorAll(".btn");
 const lightBgEl = document.querySelector(".feather-sun");
 const darkBgEl = document.querySelector(".feather-moon");
 const changeBgEl = document.querySelectorAll(".bg_dark");
@@ -18,6 +19,7 @@ window.onload = setTimeout(function () {
 
 function darkBg() {
   bodyEl.style.backgroundColor = "#2c3e50";
+  containerEl.style.backgroundColor = "#2c3e50";
   bodyEl.style.color = "#eeeeee";
   lightBgEl.style.fill = "#eeeeee";
   darkBgEl.style.fill = "#2c3e50";
@@ -25,6 +27,10 @@ function darkBg() {
     changeBgEl[i].style.boxShadow = "none";
     changeBgEl[i].style.backgroundColor = "#314355";
     changeBgEl[i].style.color = "#eeeeee";
+  }
+  for (let i = 0; i < btnEl.length; i++) {
+    btnEl[i].style.backgroundColor = "#314355";
+    btnEl[i].classList.add(".btn");
   }
 }
 
