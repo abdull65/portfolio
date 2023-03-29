@@ -7,7 +7,7 @@ const darkBgEl = document.querySelector(".feather-moon");
 const changeBgEl = document.querySelectorAll(".bg_dark");
 const backToTopEl = document.querySelector(".back_to_top_btn");
 const backToTopMsgEl = document.querySelector(".back_to_top_msg");
-
+console.log(btnEl)
 window.onload = setTimeout(function () {
   popUpEl.style.display = "flex";
   containerEl.style.display = "none";
@@ -16,6 +16,7 @@ window.onload = setTimeout(function () {
     containerEl.style.display = "block";
   }, 10000);
 }, 0);
+
 
 function darkBg() {
   bodyEl.style.backgroundColor = "#2c3e50";
@@ -27,11 +28,13 @@ function darkBg() {
     changeBgEl[i].style.boxShadow = "none";
     changeBgEl[i].style.backgroundColor = "#314355";
     changeBgEl[i].style.color = "#eeeeee";
+
   }
-  for (let i = 0; i < btnEl.length; i++) {
+	for (let i = 0; i < btnEl.length; i++) {
     btnEl[i].style.backgroundColor = "#314355";
-    btnEl[i].classList.add(".btn");
+    btnEl[i].classList.add("btn");
   }
+
 }
 
 function lightBg() {
@@ -51,15 +54,16 @@ darkBgEl.addEventListener("click", darkBg);
 lightBgEl.addEventListener("click", lightBg);
 
 function backToTop() {
-  backToTopMsgEl.textContent = "Back to top!";
+  backToTopMsgEl.innerHTML = "Back to top!";
+	backToTopMsgEl.style.display="block";
 }
 
 function removeMsg() {
   backToTopMsgEl.style.display = "none";
 }
-window.addEventListener("load", function () {
+window.addEventListener("scroll", () => {
   backToTopEl.addEventListener("mouseover", backToTop);
   backToTopEl.addEventListener("click", removeMsg);
-
   backToTopEl.addEventListener("mouseleave", removeMsg);
+	backToTopEl.style.display="flex";
 });
