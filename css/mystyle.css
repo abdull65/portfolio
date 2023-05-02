@@ -380,9 +380,11 @@ body {
   margin: 0px auto 20px;
   transition: background 400ms linear;
 }
+
 .service_section_content_card p {
-text-align: left;
+  text-align: left;
 }
+
 .portfolio_section {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -466,6 +468,7 @@ text-align: left;
   height: auto;
   transition: all 400ms linear;
   opacity: 1;
+  aspect-ratio: 3 / 2;
 }
 
 .contact_section {
@@ -782,11 +785,52 @@ button[type="submit"] {
   width: 4rem;
   z-index:
     1030;
-    transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .back_to_top_msg {
   font-size: 0.6rem;
   color: #00b87b;
   margin-top: .6rem;
+}
+
+#portfolio_item_box1,
+#portfolio_item_box2,
+#portfolio_item_box3,
+#portfolio_item_box4 {
+  position: relative;
+}
+
+#portfolio_item_box1::before {
+  content: "Usum Natural Energy";
+}
+
+#portfolio_item_box2::before {
+  content: "OMNIFOOD";
+}
+
+#portfolio_item_box3::before {
+  content: "AIRBNB";
+}
+
+#portfolio_item_box4::before {
+  content: "TO-DO LIST";
+}
+
+#portfolio_item_box1::before,
+#portfolio_item_box2::before,
+#portfolio_item_box3::before,
+#portfolio_item_box4::before {
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 2rem;
+  color: #00b87b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
