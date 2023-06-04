@@ -786,9 +786,9 @@ button[type="submit"] {
   justify-content: center;
   height: 4rem;
   width: 4rem;
-  z-index:
-    1030;
-  transition: all 400ms ease-in-out;
+  z-index: 1030;
+  transition: background 400ms ease-in-out, transform 1s ease-in-out;
+  animation: bounce 1s infinite;
 }
 
 .back_to_top_msg {
@@ -853,7 +853,7 @@ button[type="submit"] {
   position: absolute;
   opacity: 0;
   animation: fadeIn 15s infinite;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 2s ease-in-out, transform 500ms ease-in-out;
 }
 
 .animation_text:first-child {
@@ -866,4 +866,18 @@ button[type="submit"] {
 
 .animation_text:last-child {
   animation-delay: 10s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
 }
