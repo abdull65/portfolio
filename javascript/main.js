@@ -5,9 +5,10 @@ const btnEl = document.querySelectorAll(".btn");
 const lightBgEl = document.querySelector(".feather-sun");
 const darkBgEl = document.querySelector(".feather-moon");
 const changeBgEl = document.querySelectorAll(".bg_dark");
+const changeBorderEl = document.querySelector(".experience_section_content");
 const backToTopEl = document.querySelector(".back_to_top_btn");
 const backToTopMsgEl = document.querySelector(".back_to_top_msg");
-console.log(btnEl)
+console.log(btnEl);
 window.onload = setTimeout(function () {
   popUpEl.style.display = "flex";
   containerEl.style.display = "none";
@@ -17,24 +18,25 @@ window.onload = setTimeout(function () {
   }, 10000);
 }, 0);
 
-
 function darkBg() {
   bodyEl.style.backgroundColor = "#2c3e50";
   containerEl.style.backgroundColor = "#2c3e50";
   bodyEl.style.color = "#eeeeee";
   lightBgEl.style.fill = "#eeeeee";
   darkBgEl.style.fill = "#2c3e50";
+  changeBorderEl.classList.add("darkBg");
+  changeBorderEl.style.borderColor = "#eeeeee";
+  changeBorderEl.classList.remove("lightBg");
   for (let i = 0; i < changeBgEl.length; i++) {
     changeBgEl[i].style.boxShadow = "none";
     changeBgEl[i].style.backgroundColor = "#314355";
     changeBgEl[i].style.color = "#eeeeee";
-
+    changeBgEl[i].style.boxShadow = "1px 1px 5px rgba(0,0,0,.5)";
   }
-	for (let i = 0; i < btnEl.length; i++) {
+  for (let i = 0; i < btnEl.length; i++) {
     btnEl[i].style.backgroundColor = "#314355";
     btnEl[i].classList.add("btn");
   }
-
 }
 
 function lightBg() {
@@ -43,6 +45,9 @@ function lightBg() {
   bodyEl.style.color = "#2c3e50";
   lightBgEl.style.fill = "#eeeeee";
   darkBgEl.style.fill = "#2c3e50";
+  changeBorderEl.style.borderColor = "#2c3e50";
+  changeBorderEl.classList.add("lightBg");
+  changeBorderEl.classList.remove("darkBg");
   for (let i = 0; i < changeBgEl.length; i++) {
     changeBgEl[i].style.backgroundColor = "#eeeeee";
     changeBgEl[i].style.color = "#2c3e50";
@@ -55,7 +60,7 @@ lightBgEl.addEventListener("click", lightBg);
 
 function backToTop() {
   backToTopMsgEl.innerHTML = "Back to top!";
-	backToTopMsgEl.style.display="block";
+  backToTopMsgEl.style.display = "block";
 }
 
 function removeMsg() {
@@ -65,5 +70,13 @@ window.addEventListener("scroll", () => {
   backToTopEl.addEventListener("mouseover", backToTop);
   backToTopEl.addEventListener("click", removeMsg);
   backToTopEl.addEventListener("mouseleave", removeMsg);
-	backToTopEl.style.display="flex";
+  backToTopEl.style.display = "flex";
 });
+// update copyright year
+const currentYearEl = document.querySelector(".copyRight_year");
+function updateCopyRightYear() {
+  const dateEl = new Date();
+  const currentYear = dateEl.getFullYear();
+  currentYearEl.innerHTML = currentYear;
+}
+updateCopyRightYear();
