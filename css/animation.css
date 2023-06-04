@@ -30,3 +30,17 @@
     transform: translateX(0);
   }
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(4px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(4px);
+  }
+}

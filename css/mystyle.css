@@ -276,16 +276,34 @@ body {
 .progress_bar_html {
   height: 5px;
   width: 85%;
-  background-color: #00FF00;
+  background-color: #36A64F;
 }
 
 .progress_bar_css {
   height: 5px;
   width: 75%;
-  background-color: #FF8C00;
+  background-color: #1E90FF;
 }
 
 .progress_bar_javascript {
+  height: 5px;
+  width: 45%;
+  background-color: #FF4136;
+}
+
+.progress_bar_git {
+  height: 5px;
+  width: 60%;
+  background-color: #FF7F50;
+}
+
+.progress_bar_github {
+  height: 5px;
+  width: 50%;
+  background-color: #FFD700;
+}
+
+.progress_bar_react {
   height: 5px;
   width: 20%;
   background-color: #dc3545;
@@ -787,7 +805,7 @@ button[type="submit"] {
   height: 4rem;
   width: 4rem;
   z-index: 1030;
-  transition: background 400ms ease-in-out, transform 1s ease-in-out;
+  transition: background 400ms ease-in-out, transform 4s ease-in-out;
   animation: bounce 1s infinite;
 }
 
@@ -866,18 +884,4 @@ button[type="submit"] {
 
 .animation_text:last-child {
   animation-delay: 10s;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(10px);
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(10px);
-  }
 }
