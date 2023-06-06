@@ -104,7 +104,8 @@ body {
 .profile_photo img {
   height: 100%;
   width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
+  object-position: center;
   filter: brightness(80%);
   /*filter: grayscale(40%)*/
 }
