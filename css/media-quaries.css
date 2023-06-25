@@ -35,8 +35,9 @@
     line-height: 1.5;
   }
 
-  .index_section_btn {
+  .index_section_btn .btn {
     margin-bottom: 10px;
+    padding: 20px 10px;
   }
 
   .about_me_section {

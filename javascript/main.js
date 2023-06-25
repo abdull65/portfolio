@@ -15,7 +15,7 @@ window.onload = setTimeout(function () {
   setTimeout(function () {
     popUpEl.style.display = "none";
     containerEl.style.display = "block";
-  }, 10000);
+  }, 5000);
 }, 0);
 
 function darkBg() {
