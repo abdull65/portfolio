@@ -21,7 +21,7 @@
   <body>
     <div id="pop_up" style="display: none">
       <h2>Welcome to my portfolio!</h2>
-      <p>
+      <p class="popUp_text">
         As a web development beginner, I'm excited to share my work with you.
         Please take a look around and feel free to contact me with any feedback
         or questions. Thank you for visiting!😊
@@ -58,7 +58,7 @@
           <div class="about_me_content padding_bottom">
             <h1 class="title">About Me</h1>
             <p>
-              Hi! i'm Abdullah Mohammed, A Front-End developer, and also an
+              Hi! i'm Abdullah Mohammed, A Frontend Developer, and also an
               aspiring Software Engineer. I am a student of Federal University
               Of Technology Minna, Niger State, Studying Industrial Technology
               Education. Ever since I was a kid, I have always had a keen
@@ -213,8 +213,8 @@
             <div class="experience_section_content">
               <div class="experience_section_content_card box1">
                 <h5 class="experience_content_heading">Web Design</h5>
-                <p>Soft Company | 2000-2030</p>
-                <p>
+                <p class="experience_title">Soft Company | 2000-2030</p>
+                <p class="experience_text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
                   eos voluptate labore magni provident blanditiis voluptates ab,
@@ -223,8 +223,8 @@
               </div>
               <div class="experience_section_content_card box2">
                 <h5 class="experience_content_heading">Web Development</h5>
-                <p>Soft Company | 2000-2030</p>
-                <p>
+                <p class="experience_title">Soft Company | 2000-2030</p>
+                <p class="experience_text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
                   eos voluptate labore magni provident blanditiis voluptates ab,
@@ -233,8 +233,8 @@
               </div>
               <div class="experience_section_content_card br_dark box3">
                 <h5 class="experience_content_heading">Front End Design</h5>
-                <p>Soft Company | 2000-2030</p>
-                <p>
+                <p class="experience_title">Soft Company | 2000-2030</p>
+                <p class="experience_text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
                   eos voluptate labore magni provident blanditiis voluptates ab,
@@ -386,14 +386,14 @@
                 I do hope my display up until this point was not a waste of your
                 time. Do consider me for future jobs and opportunities.
               </p>
-              <form action="">
+              <form name="feedback" netlify>
                 <div class="form_content">
                   <div class="form_content_card_half">
                     <div class="form_content_card_item">
                       <input
                         class="form_control bg_dark"
                         type="text"
-                        id="name"
+                        id="FullName"
                         placeholder="Your Name"
                         required
                       />
@@ -405,6 +405,7 @@
                         class="form_control bg_dark"
                         type="tel"
                         id="tel"
+                        name="tel"
                         placeholder="Telephone"
                         required
                       />
@@ -416,6 +417,7 @@
                         class="form_control bg_dark"
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="Your Email"
                         required
                       />
@@ -497,7 +499,7 @@
               <div class="footer_type_text">
                 <p>
                   copyright &copy <span class="copyRight_year"></span> All Right
-                  Reserved. Designed by <a href="#">Abdultech.</a>
+                  Reserved. Designed by <a href="#">usumTech.</a>
                 </p>
               </div>
             </div>

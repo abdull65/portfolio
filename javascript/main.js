@@ -8,7 +8,7 @@ const changeBgEl = document.querySelectorAll(".bg_dark");
 const changeBorderEl = document.querySelector(".experience_section_content");
 const backToTopEl = document.querySelector(".back_to_top_btn");
 const backToTopMsgEl = document.querySelector(".back_to_top_msg");
-console.log(btnEl);
+// console.log(btnEl);
 window.onload = setTimeout(function () {
   popUpEl.style.display = "flex";
   containerEl.style.display = "none";
@@ -19,7 +19,8 @@ window.onload = setTimeout(function () {
 }, 0);
 
 function darkBg() {
-  bodyEl.style.backgroundColor = "#2c3e50";
+  // bodyEl.style.backgroundColor = "#2c3e50";
+  bodyEl.classList.toggle("change_bgColor");
   containerEl.style.backgroundColor = "#2c3e50";
   bodyEl.style.color = "#eeeeee";
   lightBgEl.style.fill = "#eeeeee";
