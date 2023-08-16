@@ -874,7 +874,7 @@ button[type="submit"] {
 
 /********** text animation style *************/
 
-#animation_container {
+/* #animation_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -903,4 +903,9 @@ button[type="submit"] {
 
 .change_bgColor .darkBg {
   background-color: #ffffff;
+} */
+
+.animation_text {
+  color: #fff;
+  font-size: 1.4rem;
 }

@@ -8,6 +8,8 @@ const changeBgEl = document.querySelectorAll(".bg_dark");
 const changeBorderEl = document.querySelector(".experience_section_content");
 const backToTopEl = document.querySelector(".back_to_top_btn");
 const backToTopMsgEl = document.querySelector(".back_to_top_msg");
+const textAnimationEl = document.querySelector(".animation_text");
+
 // console.log(btnEl);
 window.onload = setTimeout(function () {
   popUpEl.style.display = "flex";
@@ -17,7 +19,30 @@ window.onload = setTimeout(function () {
     containerEl.style.display = "block";
   }, 5000);
 }, 0);
-
+const careers = [
+  "FRONTEND DEVELOPER",
+  "WEBSITE DESIGNER",
+  "WEBSITE DEVELOPER",
+  "FREELANCER",
+];
+let careerIndex = 0;
+let characterIndex = 0;
+let updateText = function () {
+  characterIndex++;
+  textAnimationEl.innerHTML = `${careers[careerIndex].slice(
+    0,
+    characterIndex
+  )}`;
+  if (characterIndex === careers[careerIndex].length) {
+    careerIndex++;
+    characterIndex = 0;
+  }
+  if (careerIndex === careers.length) {
+    careerIndex = 0;
+  }
+  setTimeout(updateText, 400);
+};
+updateText();
 function darkBg() {
   // bodyEl.style.backgroundColor = "#2c3e50";
   bodyEl.classList.toggle("change_bgColor");
