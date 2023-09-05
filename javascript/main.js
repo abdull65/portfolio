@@ -104,5 +104,7 @@ function updateCopyRightYear() {
   const dateEl = new Date();
   const currentYear = dateEl.getFullYear();
   currentYearEl.innerHTML = currentYear;
+const updateTime = dateEl.toLocaleTimeString()
+console.log(updateTime)
 }
 updateCopyRightYear();
