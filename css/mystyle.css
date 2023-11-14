@@ -299,6 +299,11 @@ body {
   width: 45%;
   background-color: #FF4136;
 }
+.progress_bar_wordpress {
+  height: 5px;
+  width: 85%;
+  background-color: #36A64F;
+}
 
 .progress_bar_git {
   height: 5px;
@@ -485,12 +490,38 @@ body {
   gap: 1rem;
   margin-top: 0.5rem;
 }
+.portfolio_card2_item:nth-child(1n + 5) {
+  max-height: 0;
+  opacity: 0;
+  transition: .5s;
+}
+.showMore .portfolio_card2_item:nth-child(1n + 5) {
+  max-height: 100%;
+  opacity: 1;
+}
+.viewMoreBtnBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#viewMoreBtn {
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+cursor: pointer;
+background-color: transparent;
+color: #fff;
+font-size: 1rem;
+}
 
 #portfolio_item_box1,
 #portfolio_item_box2,
 #portfolio_item_box3,
 #portfolio_item_box4,
-#portfolio_item_box5 {
+#portfolio_item_box5,
+#portfolio_item_box6 {
   position: relative;
 }
 
@@ -513,12 +544,16 @@ body {
 #portfolio_item_box5::before {
   content: "CALCULATOR";
 }
+#portfolio_item_box6::before {
+  content: "GETLINKED HACKATHON";
+}
 
 #portfolio_item_box1::before,
 #portfolio_item_box2::before,
 #portfolio_item_box3::before,
 #portfolio_item_box4::before,
-#portfolio_item_box5::before {
+#portfolio_item_box5::before,
+#portfolio_item_box6::before {
   position: absolute;
   top: 0;
   bottom: 0;

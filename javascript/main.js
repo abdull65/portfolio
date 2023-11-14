@@ -17,7 +17,7 @@ window.onload = setTimeout(function () {
   setTimeout(function () {
     popUpEl.style.display = "none";
     containerEl.style.display = "block";
-  }, 5000);
+  }, 3000);
 }, 0);
 const careers = [
   "FRONTEND DEVELOPER",
@@ -108,3 +108,10 @@ const updateTime = dateEl.toLocaleTimeString()
 console.log(updateTime)
 }
 updateCopyRightYear();
+
+const viewMoreBtn = document.getElementById("viewMoreBtn")
+const portfolio = document.querySelector(".portfolio_content_card2")
+viewMoreBtn.addEventListener("click", () => {
+  portfolio.classList.toggle("showMore");
+  console.log("working")
+})
