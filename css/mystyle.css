@@ -522,7 +522,6 @@ transition: .5s ease-in-out;
 #viewMoreBtn:hover {
   text-decoration: none;
   box-shadow: inset 200px 0px 0px #00b87b;
-  color: #00b87b;
   cursor: pointer;
 }
 .fa-arrow-right {
