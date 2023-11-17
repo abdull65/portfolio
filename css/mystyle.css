@@ -499,29 +499,45 @@ body {
   max-height: 100%;
   opacity: 1;
 }
+
 .viewMoreBtnBox {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 }
 #viewMoreBtn {
   border: none;
   display: inline-block;
-  padding: 1rem 2rem;
+  margin-top: 1rem;
+  padding: .5rem 2rem;
   font-size: 1.4rem;
 cursor: pointer;
 background-color: transparent;
 color: #fff;
 font-size: 1rem;
+text-decoration: underline;
+transition: .5s ease-in-out;
 }
-
+#viewMoreBtn:hover {
+  text-decoration: none;
+  box-shadow: inset 200px 0px 0px #00b87b;
+}
+.fa-arrow-right {
+  transition: .5s ease-in-out;
+  animation: forward 1s ease-in-out infinite;
+}
+#viewMoreBtn:hover .fa-arrow-right {
+  transform: rotate(90deg);
+}
 #portfolio_item_box1,
 #portfolio_item_box2,
 #portfolio_item_box3,
 #portfolio_item_box4,
 #portfolio_item_box5,
-#portfolio_item_box6 {
+#portfolio_item_box6,
+#portfolio_item_box7,
+#portfolio_item_box8{
   position: relative;
 }
 
@@ -547,13 +563,22 @@ font-size: 1rem;
 #portfolio_item_box6::before {
   content: "GETLINKED HACKATHON";
 }
+#portfolio_item_box7::before {
+  content: "An-Noor Engineering Website";
+}
 
+#portfolio_item_box8::before {
+  content: "An-Noor E-commerce Website";
+
+}
 #portfolio_item_box1::before,
 #portfolio_item_box2::before,
 #portfolio_item_box3::before,
 #portfolio_item_box4::before,
 #portfolio_item_box5::before,
-#portfolio_item_box6::before {
+#portfolio_item_box6::before,
+#portfolio_item_box7::before,
+#portfolio_item_box8::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -580,6 +605,7 @@ font-size: 1rem;
   transition: all 400ms linear;
   opacity: 1;
   aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 .contact_section {
@@ -905,41 +931,7 @@ button[type="submit"] {
   margin-top: .6rem;
 }
 
-
-
 /********** text animation style *************/
-
-/* #animation_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.animation_text {
-  position: absolute;
-  opacity: 0;
-  animation: fadeIn 15s infinite;
-  transition: opacity 2s ease-in-out, transform 500ms ease-in-out;
-}
-
-.animation_text:first-child {
-  animation-delay: 0;
-}
-
-.animation_text:nth-child(2) {
-  animation-delay: 5s;
-}
-
-.animation_text:last-child {
-  animation-delay: 10s;
-}
-
-.change_bgColor .darkBg {
-  background-color: #ffffff;
-} */
-
 .animation_text {
   color: #fff;
   font-size: 1.4rem;

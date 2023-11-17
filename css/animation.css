@@ -44,3 +44,16 @@
     transform: translateY(4px);
   }
 }
+@keyframes forward {
+  0% {
+    transform: translateX(4px);
+  }
+
+  50% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
