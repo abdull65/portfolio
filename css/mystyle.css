@@ -522,7 +522,8 @@ transition: .5s ease-in-out;
 #viewMoreBtn:hover {
   text-decoration: none;
   box-shadow: inset 200px 0px 0px #00b87b;
-  cursor: pointer;
+    cursor: pointer;
+    z-index: 99;
 }
 .fa-arrow-right {
   transition: .5s ease-in-out;
@@ -922,14 +923,22 @@ button[type="submit"] {
   height: 4rem;
   width: 4rem;
   z-index: 1030;
-  transition: background 400ms ease-in-out, transform 4s ease-in-out;
+  transition: all 400ms ease-in-out, transform 4s ease-in-out;
   animation: bounce 1s infinite;
 }
-
+.showBtn.back_to_top_btn {
+  display: flex;
+}
 .back_to_top_msg {
+  transition: all 400ms ease-in-out, transform 4s ease-in-out;
+
   font-size: 0.6rem;
   color: #00b87b;
   margin-top: .6rem;
+  display: none;
+}
+.showBtn.back_to_top_msg {
+  display: block;
 }
 
 /********** text animation style *************/

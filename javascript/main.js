@@ -45,7 +45,7 @@ let updateText = function () {
 updateText();
 function darkBg() {
   // bodyEl.style.backgroundColor = "#2c3e50";
-  bodyEl.classList.toggle("change_bgColor");
+  bodyEl.style.backgroundColor = "#2c3e50";
   containerEl.style.backgroundColor = "#2c3e50";
   bodyEl.style.color = "#eeeeee";
   lightBgEl.style.fill = "#eeeeee";
@@ -83,21 +83,26 @@ function lightBg() {
 
 darkBgEl.addEventListener("click", darkBg);
 lightBgEl.addEventListener("click", lightBg);
-
-function backToTop() {
-  backToTopMsgEl.innerHTML = "Back to top!";
-  backToTopMsgEl.style.display = "block";
+window.addEventListener("scroll", (e) => {
+  e.preventDefault()
+if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+backToTopEl.classList.add("showBtn");
+} else {
+  backToTopEl.classList.remove("showBtn");
 }
-
-function removeMsg() {
-  backToTopMsgEl.style.display = "none";
-}
-window.addEventListener("scroll", () => {
-  backToTopEl.addEventListener("mouseover", backToTop);
-  backToTopEl.addEventListener("click", removeMsg);
-  backToTopEl.addEventListener("mouseleave", removeMsg);
-  backToTopEl.style.display = "flex";
 });
+backToTopEl.addEventListener("mouseover", () => {
+  backToTopMsgEl.classList.add("showBtn")
+})
+backToTopEl.addEventListener("mouseleave", () => {
+  backToTopMsgEl.classList.remove("showBtn")
+})
+backToTopEl.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+})
 // update copyright year
 const currentYearEl = document.querySelector(".copyRight_year");
 function updateCopyRightYear() {
