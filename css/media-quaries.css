@@ -109,7 +109,9 @@
   .portfolio_content_card1 {
     margin: 0;
   }
-
+  .portfolio_content_card1_item ul .btn {
+    font-size: 0.8rem;
+  }
   .portfolio_content_card2 {
     grid-template-columns: 1fr;
   }
