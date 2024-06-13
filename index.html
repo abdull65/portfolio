@@ -7,9 +7,12 @@
     <link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
     <link rel="stylesheet" type="text/css" href="./css/media-quaries.css" />
     <link rel="stylesheet" type="text/css" href="./css/animation.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/5cc2d2f620.js"
       crossorigin="anonymous"
@@ -18,12 +21,12 @@
   </head>
   <body>
     <div id="pop_up" style="display: none">
-      <h2>Welcome to my portfolio!</h2>
-      <p class="popUp_text">
-        As a web development beginner, I'm excited to share my work with you.
-        Please take a look around and feel free to contact me with any feedback
-        or questions. Thank you for visiting!😊
-      </p>
+      <div class="loaderBox">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <p>Howdy! Loading your experience...</p>
     </div>
     <!--container-->
     <div id="container">
@@ -54,26 +57,17 @@
           <div class="about_me_content padding_bottom">
             <h1 class="title">About Me</h1>
             <p>
-              <!-- Hi! i'm Abdullah Mohammed, A Frontend Developer, and also an
-              aspiring Software Engineer. I am a student of Federal University
-              Of Technology Minna, Niger State, Studying Industrial Technology
-              Education. Ever since I was a kid, I have always had a keen
-              interest in development and technology at large. and have worked
-              hard to develop my skills to a level at which I can be proud of,
-              and looking forward to devoloping my skills to more advanced
-              software engineering and problem solving skills so i can serve my
-              clients to the standard of their choice and satisfaction. -->
-              i am a frontend 
-              developer, I have a strong passion for streamlining processes and 
-              simplifying tasks. I believe that in the world of technology, there is 
-              always something new to learn and discover. I am committed to constantly 
-              improving my skills and staying up-to-date with the latest trends and 
-              technologies in the industry. Above all, I am driven by a deep passion 
-              for creating clean, elegant, and efficient solutions that make a real 
-              difference in people's lives. Whether it's a simple task automation or a 
-              complex web application, my goal is always to deliver top-quality work 
-              that exceeds my clients' expectations and meets the needs of the 
-              end-users.
+              i am a frontend developer, I have a strong passion for
+              streamlining processes and simplifying tasks. I believe that in
+              the world of technology, there is always something new to learn
+              and discover. I am committed to constantly improving my skills and
+              staying up-to-date with the latest trends and technologies in the
+              industry. Above all, I am driven by a deep passion for creating
+              clean, elegant, and efficient solutions that make a real
+              difference in people's lives. Whether it's a simple task
+              automation or a complex web application, my goal is always to
+              deliver top-quality work that exceeds my clients' expectations and
+              meets the needs of the end-users.
             </p>
 
             <div class="more_about_me">
@@ -81,7 +75,7 @@
                 <span class="name_title">Name: </span>Abdullahi Mohammed
               </div>
               <div class="more_about_me_content">
-                <span class="name_title">Birthdate: </span>19th, September.
+                <span class="name_title">D.o.b: </span>19th, September.
               </div>
               <!-- <div class="more_about_me_content">
                 <span class="name_title">Degree: </span>B.tech
@@ -217,8 +211,12 @@
             <h1 class="title">Experience</h1>
             <div class="experience_section_content">
               <div class="experience_section_content_card box1">
-                <h5 class="experience_content_heading">Web Development Intern</h5>
-                <p class="experience_title">Abuja Digital Innovations | 2021-2022</p>
+                <h5 class="experience_content_heading">
+                  Web Development Intern
+                </h5>
+                <p class="experience_title">
+                  Abuja Digital Innovations | 2021-2022
+                </p>
                 <!-- <p class="experience_text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
@@ -238,7 +236,7 @@
               </div>
               <div class="experience_section_content_card br_dark box3">
                 <h5 class="experience_content_heading">Front-End Developer</h5>
-                <p class="experience_title"> Ibadan Tech Hub | 2021-2022</p>
+                <p class="experience_title">Ibadan Tech Hub | 2021-2022</p>
                 <p class="experience_text">
                   <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
@@ -248,7 +246,9 @@
               </div>
               <div class="experience_section_content_card br_dark box3">
                 <h5 class="experience_content_heading">Website Manager</h5>
-                <p class="experience_title"> Limas Luxury Abayas | 2023-Till date</p>
+                <p class="experience_title">
+                  Limas Luxury Abayas | 2023-Till date
+                </p>
                 <p class="experience_text">
                   <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente adipisci molestias enim quam aperiam facere, ea cum
@@ -424,7 +424,10 @@
                   </div>
                 </div>
                 <div class="viewMoreBtnBox">
-                  <button id="viewMoreBtn">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                  <button id="viewMoreBtn">
+                    View More
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -606,8 +609,8 @@
         </div>
       </div>
       <div class="back_to_top_btn">
-        <p href="" class="link btn bg_dark"
-          ><svg
+        <p href="" class="link btn bg_dark">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
             height="28"
@@ -619,8 +622,9 @@
             stroke-linejoin="round"
             class="feather feather-chevron-up"
           >
-            <polyline points="18 15 12 9 6 15"></polyline></svg
-        ></p>
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </p>
         <p class="back_to_top_msg">back top top!</p>
       </div>
     </div>

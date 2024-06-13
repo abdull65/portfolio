@@ -16,7 +16,7 @@ html {
 body {
   background-color: var(--primary-color-dark);
   color: var(--primary-color-light);
-  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -26,31 +26,89 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  text-align: left;
-  background-color: var(--primary-color-dark);
-  height: 100%;
-  width:
-    100%;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(45deg, #2c3e50, #355b7f, #2c3e50, #2f5f90);
+  background-size: 300% 300%;
+  height: 100vh;
+  width: 100%;
   z-index: 1090;
-  padding: 10% 38rem 0 2rem;
+  animation: gradiantAnimation 8s ease infinite;
+}
+@keyframes gradiantAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-#pop_up h2 {
-  font-size: 2.4rem;
+#pop_up p {
+  font-size: 2rem;
   color: #00b87b;
+  margin-top: 40px;
+  animation: popup 1.2s ease-in 1;
+}
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.loaderBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+.bar {
+  display: inline-block;
+  width: 8px;
+  height: 50px;
+  background-color: #ffffff;
+  animation: loader 1.2s cubic-bezier(0, 0.8, 0.8, 3) infinite;
+}
+.bar:first-child {
+  animation-delay: -0.24s;
+}
+.bar:nth-child(2) {
+  animation-delay: -0.12s;
+}
+.bar:last-child {
+  animation-delay: 0s;
 }
 
-.popUp_text {
-  font-size: 1.4rem;
-  text-align: justify;
+@keyframes loader {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 #container {
   background-color: var(--primary-color-dark);
   max-width: 1140px;
   margin: 0px 20px;
-  padding:
-    10px 0;
+  padding: 10px 0;
   transition: background 400ms linear;
   position: relative;
 }
@@ -58,7 +116,6 @@ body {
 .container_content {
   display: flex;
   justify-content: space-between;
-
 }
 
 .index_section {
@@ -88,8 +145,7 @@ body {
   margin-bottom: 25px;
   vertical-align: center;
   max-width: 100%;
-  height:
-    auto;
+  height: auto;
 }
 
 .index_content h1 {
@@ -124,8 +180,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:
-    1rem;
+  margin-top: 1rem;
 }
 
 .index_section_btn .btn {
@@ -201,8 +256,7 @@ body {
   height: 2px;
   width: 50px;
   bottom: 1px;
-  left:
-    20px;
+  left: 20px;
   background-color: #00b87b;
 }
 
@@ -255,8 +309,7 @@ body {
 .card2_content_grp {
   display: flex;
   align-items: center;
-  background-color:
-    #314355;
+  background-color: #314355;
   padding: 20px;
 }
 
@@ -273,48 +326,47 @@ body {
 .card2_content_typed_text h5 {
   font-size: 1.25rem;
   font-weight: 600;
-
 }
 
 .progress {
   height: 5px;
   width: 100%;
-  background-color: #FFD1DC;
+  background-color: #ffd1dc;
 }
 
 .progress_bar_html {
   height: 5px;
   width: 85%;
-  background-color: #36A64F;
+  background-color: #36a64f;
 }
 
 .progress_bar_css {
   height: 5px;
   width: 75%;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
 }
 
 .progress_bar_javascript {
   height: 5px;
   width: 45%;
-  background-color: #FF4136;
+  background-color: #ff4136;
 }
 .progress_bar_wordpress {
   height: 5px;
   width: 85%;
-  background-color: #36A64F;
+  background-color: #36a64f;
 }
 
 .progress_bar_git {
   height: 5px;
   width: 60%;
-  background-color: #FF7F50;
+  background-color: #ff7f50;
 }
 
 .progress_bar_github {
   height: 5px;
   width: 50%;
-  background-color: #FFD700;
+  background-color: #ffd700;
 }
 
 .progress_bar_react {
@@ -332,16 +384,14 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
-  position:
-    relative;
+  position: relative;
 }
 
 .experience_content_heading::before {
   content: "";
   width: 70px;
   height: 2px;
-  background-color:
-    #e9ecef;
+  background-color: #e9ecef;
   position: absolute;
   bottom: 40%;
   left: -80px;
@@ -358,8 +408,7 @@ body {
 .experience_section_content {
   border-left: #e9ecef 2px solid;
   padding-left: 5rem;
-  line-height:
-    1.5;
+  line-height: 1.5;
 }
 
 .experience_section_content_card {
@@ -385,9 +434,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  text-align:
-    center;
-
+  text-align: center;
 }
 
 .service_section_content_grp {
@@ -411,13 +458,11 @@ body {
 .service_section_content_card i {
   width: 75px;
   height: 75px;
-  background-color:
-    #e9ecef;
+  background-color: #e9ecef;
   color: #00b87b;
   display: flex;
   align-items: center;
-  justify-content:
-    center;
+  justify-content: center;
   margin-bottom: 20px;
   margin: 0px auto 20px;
   transition: background 400ms linear;
@@ -435,19 +480,14 @@ body {
 .portfolio_section_content {
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: 1rem; margin-left: 
-  2rem; margin-right: 2rem; */
 }
 
 .portfolio_section_content_card {
   width: 100%;
-  /* padding-top: 1rem; padding-left: 2rem; 
-  padding-right: 2rem; */
 }
 
 .portfolio_content_card1 {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -472,8 +512,7 @@ body {
 
 .portfolio_content_card1_item ul .btn {
   background-color: #273644;
-  border-color:
-    #253240;
+  border-color: #253240;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -493,7 +532,7 @@ body {
 .portfolio_card2_item:nth-child(1n + 5) {
   max-height: 0;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 .showMore .portfolio_card2_item:nth-child(1n + 5) {
   max-height: 100%;
@@ -510,23 +549,23 @@ body {
   border: none;
   display: inline-block;
   margin-top: 1rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 1.4rem;
-cursor: pointer;
-background-color: transparent;
-color: #fff;
-font-size: 1rem;
-text-decoration: underline;
-transition: .5s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
 }
 #viewMoreBtn:hover {
   text-decoration: none;
   box-shadow: inset 200px 0px 0px #00b87b;
-    cursor: pointer;
-    z-index: 99;
+  cursor: pointer;
+  z-index: 99;
 }
 .fa-arrow-right {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   animation: forward 1s ease-in-out infinite;
 }
 #viewMoreBtn:hover .fa-arrow-right {
@@ -539,7 +578,7 @@ transition: .5s ease-in-out;
 #portfolio_item_box5,
 #portfolio_item_box6,
 #portfolio_item_box7,
-#portfolio_item_box8{
+#portfolio_item_box8 {
   position: relative;
 }
 
@@ -571,7 +610,6 @@ transition: .5s ease-in-out;
 
 #portfolio_item_box8::before {
   content: "An-Noor E-commerce Website";
-
 }
 #portfolio_item_box1::before,
 #portfolio_item_box2::before,
@@ -642,11 +680,9 @@ textarea {
   padding: 1rem 0.75rem;
   margin: 0.5rem 0;
   width: 100%;
-  font-family:
-    inherit;
+  font-family: inherit;
   font-weight: 400;
-  color:
-    #fff;
+  color: #fff;
   line-height: 1.5;
   border: 0;
 }
@@ -655,8 +691,7 @@ textarea {
   position: relative;
   max-width: 100%;
   margin-top: 10px;
-  padding-left:
-    5px;
+  padding-left: 5px;
   padding-right: 5px;
 }
 
@@ -680,15 +715,13 @@ textarea {
 button[type="submit"] {
   display: inline-block;
   border: none;
-  background-color:
-    #00b87b;
+  background-color: #00b87b;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
   width: 100%;
-  padding:
-    1rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
@@ -703,8 +736,7 @@ button[type="submit"] {
   text-align: center;
   background-color: #314355;
   color: #fff;
-  width:
-    100%;
+  width: 100%;
   height: 40vh;
   line-height: 2.5;
 }
@@ -757,8 +789,7 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:
-    center;
+  text-align: center;
   line-height: 2rem;
   margin-top: 0.5;
 }
@@ -780,12 +811,11 @@ button[type="submit"] {
 .card_text_box .contact_email {
   display: inline-flex;
   align-items: center;
-  justify-content:
-    center;
+  justify-content: center;
   background-color: #fff;
   width: 200px;
   border-radius: 8px;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .card_text_box .contact_email svg,
@@ -793,16 +823,14 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   fill: var(--primary-color-dark);
-  stroke:
-    var(--primary-color-light);
-  font-size:
-    0.8rem;
+  stroke: var(--primary-color-light);
+  font-size: 0.8rem;
   color: var(--primary-color-dark);
 }
 
 .change_bg-btn {
   display: inline-flex;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 .toggle {
@@ -818,13 +846,13 @@ button[type="submit"] {
 .left_toggle svg {
   fill: #f5f5f5;
   stroke: var(--primary-color-dark);
-  margin-right: -.2rem;
+  margin-right: -0.2rem;
 }
 
 .right_toggle svg {
   fill: #f5f5f5;
   stroke: var(--primary-color-dark);
-  margin-left: -.3rem;
+  margin-left: -0.3rem;
 }
 
 .left_toggle svg:active,
@@ -838,8 +866,7 @@ button[type="submit"] {
   text-align: left;
   line-height: 1.5;
   margin-top: 1.5rem;
-  margin-bottom:
-    -1rem;
+  margin-bottom: -1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -882,10 +909,9 @@ button[type="submit"] {
   width: 20px;
   height: 20px;
   stroke: var(--primary-color-dark);
-  fill:
-    var(--primary-color-dark);
+  fill: var(--primary-color-dark);
   stroke-width: 1;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 #bg_color_changer_box {
@@ -916,8 +942,7 @@ button[type="submit"] {
   top: 34.8rem;
   right: 1.6rem;
   display: none;
-  flex-direction:
-    column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 4rem;
@@ -934,7 +959,7 @@ button[type="submit"] {
 
   font-size: 0.6rem;
   color: #00b87b;
-  margin-top: .6rem;
+  margin-top: 0.6rem;
   display: none;
 }
 .showBtn.back_to_top_msg {

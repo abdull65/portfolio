@@ -84,39 +84,39 @@ function lightBg() {
 darkBgEl.addEventListener("click", darkBg);
 lightBgEl.addEventListener("click", lightBg);
 window.addEventListener("scroll", (e) => {
-  e.preventDefault()
-if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-backToTopEl.classList.add("showBtn");
-} else {
-  backToTopEl.classList.remove("showBtn");
-}
+  e.preventDefault();
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    backToTopEl.classList.add("showBtn");
+  } else {
+    backToTopEl.classList.remove("showBtn");
+  }
 });
 backToTopEl.addEventListener("mouseover", () => {
-  backToTopMsgEl.classList.add("showBtn")
-})
+  backToTopMsgEl.classList.add("showBtn");
+});
 backToTopEl.addEventListener("mouseleave", () => {
-  backToTopMsgEl.classList.remove("showBtn")
-})
+  backToTopMsgEl.classList.remove("showBtn");
+});
 backToTopEl.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-})
+});
 // update copyright year
 const currentYearEl = document.querySelector(".copyRight_year");
 function updateCopyRightYear() {
   const dateEl = new Date();
   const currentYear = dateEl.getFullYear();
   currentYearEl.innerHTML = currentYear;
-const updateTime = dateEl.toLocaleTimeString()
-console.log(updateTime)
+  const updateTime = dateEl.toLocaleTimeString();
+  console.log(updateTime);
 }
 updateCopyRightYear();
 
-const viewMoreBtn = document.getElementById("viewMoreBtn")
-const portfolio = document.querySelector(".portfolio_content_card2")
+const viewMoreBtn = document.getElementById("viewMoreBtn");
+const portfolio = document.querySelector(".portfolio_content_card2");
 viewMoreBtn.addEventListener("click", () => {
   portfolio.classList.toggle("showMore");
-  console.log("working")
-})
+  console.log("working");
+});
