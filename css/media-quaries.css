@@ -83,7 +83,7 @@
   }
 
   .service_section_content_card > p {
-    text-align: left;
+    text-align: center;
   }
 
   .title {
@@ -108,6 +108,9 @@
 
   .portfolio_content_card1 {
     margin: 0;
+  }
+  .portfolio_content_card1_item ul {
+    margin-bottom: 0;
   }
   .portfolio_content_card1_item ul .btn {
     font-size: 0.8rem;
