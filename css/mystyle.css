@@ -24,7 +24,7 @@ body {
 
 #pop_up {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -49,6 +49,7 @@ body {
 
 #pop_up p {
   font-size: 2rem;
+  font-weight: 600;
   color: #00b87b;
   margin-top: 40px;
   animation: popup 1.2s ease-in 1;
