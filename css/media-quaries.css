@@ -154,9 +154,11 @@
 
   #bg_color_changer_box {
     right: 0.2rem;
+    top: 32rem;
   }
 
   .back_to_top_btn {
-    right: -1rem;
+    right: -0.5rem;
+    top: 40rem;
   }
 }

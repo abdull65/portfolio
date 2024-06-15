@@ -5,6 +5,7 @@ const btnEl = document.querySelectorAll(".btn");
 const lightBgEl = document.querySelector(".feather-sun");
 const darkBgEl = document.querySelector(".feather-moon");
 const changeBgEl = document.querySelectorAll(".bg_dark");
+const animationText = document.querySelector(".animation_text");
 const changeBorderEl = document.querySelector(".experience_section_content");
 const backToTopEl = document.querySelector(".back_to_top_btn");
 const backToTopMsgEl = document.querySelector(".back_to_top_msg");
@@ -58,6 +59,7 @@ function darkBg() {
     changeBgEl[i].style.backgroundColor = "#314355";
     changeBgEl[i].style.color = "#eeeeee";
     changeBgEl[i].style.boxShadow = "1px 1px 5px rgba(0,0,0,.5)";
+    animationText.style.color = "#ffffff";
   }
   for (let i = 0; i < btnEl.length; i++) {
     btnEl[i].style.backgroundColor = "#314355";
@@ -78,11 +80,19 @@ function lightBg() {
     changeBgEl[i].style.backgroundColor = "#eeeeee";
     changeBgEl[i].style.color = "#2c3e50";
     changeBgEl[i].style.boxShadow = "1px 1px 5px rgba(0,0,0,.5)";
+    animationText.style.color = "#314355";
   }
 }
 
-darkBgEl.addEventListener("click", darkBg);
-lightBgEl.addEventListener("click", lightBg);
+const changeBgEvent = document.getElementById("bg_color_changer_box");
+changeBgEvent.addEventListener("click", () => {
+  changeBgEvent.classList.toggle("change");
+  if (changeBgEvent.classList.contains("change")) {
+    lightBg();
+  } else {
+    darkBg();
+  }
+});
 window.addEventListener("scroll", (e) => {
   e.preventDefault();
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
