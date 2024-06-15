@@ -35,17 +35,6 @@ body {
   z-index: 1090;
   animation: gradiantAnimation 8s ease infinite;
 }
-@keyframes gradiantAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 #pop_up p {
   font-size: 2rem;
@@ -54,20 +43,7 @@ body {
   margin-top: 40px;
   animation: popup 1.2s ease-in 1;
 }
-@keyframes popup {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 .loaderBox {
   display: flex;
   flex-direction: row;
@@ -91,18 +67,6 @@ body {
 }
 .bar:last-child {
   animation-delay: 0s;
-}
-
-@keyframes loader {
-  0% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
 }
 
 #container {
