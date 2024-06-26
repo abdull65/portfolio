@@ -501,10 +501,10 @@ body {
 .portfolio_card2_item:nth-child(1n + 5) {
   max-height: 0;
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 .showMore .portfolio_card2_item:nth-child(1n + 5) {
-  max-height: 100%;
+  max-height: 500px;
   opacity: 1;
 }
 
@@ -547,7 +547,8 @@ body {
 #portfolio_item_box5,
 #portfolio_item_box6,
 #portfolio_item_box7,
-#portfolio_item_box8 {
+#portfolio_item_box8,
+#portfolio_item_box9 {
   position: relative;
 }
 
@@ -574,11 +575,14 @@ body {
   content: "GETLINKED HACKATHON";
 }
 #portfolio_item_box7::before {
-  content: "An-Noor Engineering Website";
+  content: "Bomes digital Agency";
 }
 
 #portfolio_item_box8::before {
-  content: "An-Noor E-commerce Website";
+  content: "Limas Abayas Store";
+}
+#portfolio_item_box8::before {
+  content: "Married Women Network";
 }
 #portfolio_item_box1::before,
 #portfolio_item_box2::before,
@@ -587,7 +591,8 @@ body {
 #portfolio_item_box5::before,
 #portfolio_item_box6::before,
 #portfolio_item_box7::before,
-#portfolio_item_box8::before {
+#portfolio_item_box8::before,
+#portfolio_item_box9::before {
   position: absolute;
   top: 0;
   bottom: 0;
