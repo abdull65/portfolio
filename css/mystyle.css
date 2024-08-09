@@ -305,20 +305,20 @@ body {
 
 .progress_bar_html {
   height: 5px;
-  width: 85%;
-  background-color: #36a64f;
+  width: 95%;
+  background-color: #B3D9FF;
 }
 
 .progress_bar_css {
   height: 5px;
-  width: 75%;
-  background-color: #1e90ff;
+  width: 80%;
+  background-color: #99CCFF;
 }
 
 .progress_bar_javascript {
   height: 5px;
-  width: 45%;
-  background-color: #ff4136;
+  width: 70%;
+  background-color: #66B2FF;
 }
 .progress_bar_wordpress {
   height: 5px;
