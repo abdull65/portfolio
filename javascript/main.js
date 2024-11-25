@@ -123,10 +123,12 @@ function updateCopyRightYear() {
   console.log(updateTime);
 }
 updateCopyRightYear();
-
+// View More
 const viewMoreBtn = document.getElementById("viewMoreBtn");
+const viewMoreText = document.querySelector(".viewMoreText");
 const portfolio = document.querySelector(".portfolio_content_card2");
 viewMoreBtn.addEventListener("click", () => {
   portfolio.classList.toggle("showMore");
+  viewMoreText.innerHTML === "View More" ? viewMoreText.innerHTML = "View Less" : viewMoreText.innerHTML = "View More";
   console.log("working");
 });
